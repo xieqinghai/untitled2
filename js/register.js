@@ -9,7 +9,7 @@ window.onload = function(){
 
     text1.onmouseout = function()
     {
-        if(/[\w]{6,14}/.test(text1.value) )
+        if(/^[\w]{6,14}$/.test(text1.value) )
         {
             document.getElementById("span1").innerText = "√";
         }else if(text1.value.length>0)
@@ -21,7 +21,7 @@ window.onload = function(){
     text2.onmouseout = function()
     {
 
-        if(/[0-9a-zA-Z]{6,14}/.test(text2.value))
+        if(/^[0-9a-zA-Z]{6,14}$/.test(text2.value))
         {
             document.getElementById("span2").innerText = "√";
         } else if(text2.value.length>0)
@@ -32,7 +32,7 @@ window.onload = function(){
     text3.onmouseout = function()
     {
 
-        if(text2.value === text3.value &&  /[0-9a-zA-Z]{6,14}/.test(text3.value))
+        if(text2.value === text3.value &&  /^[0-9a-zA-Z]{6,14}$/.test(text3.value))
         {
             document.getElementById("span3").innerText = "√";
         } else if(text3.value.length>0)
@@ -42,7 +42,7 @@ window.onload = function(){
     }
     text4.onmouseout = function()
     {
-        if(/([\w]{6,14}@(163|126)(\.com|\.cn|\.org))|([0-9]{5,11}@qq\.com)/.test(text4.value))
+        if(/^([\w]{6,14}@(163|126)(\.com|\.cn|\.org))|([0-9]{5,11}@qq\.com)$/.test(text4.value))
         {
             document.getElementById("span4").innerText = "√";
         } else if(text4.value.length>0)
@@ -53,7 +53,7 @@ window.onload = function(){
     }
     text5.onmouseout = function()
     {
-        if(/[0-9]{11}/.test(text5.value))
+        if(/^[0-9]{11}$/.test(text5.value))
         {
             document.getElementById("span5").innerText = "√";
         } else if(text5.value.length>0)
@@ -63,7 +63,7 @@ window.onload = function(){
     }
     text6.onmouseout = function()
     {
-        if(/[0-9]{6}/.test(text6.value))
+        if(/^[0-9]{6}$/.test(text6.value))
         {
             document.getElementById("span6").innerText = "√";
         } else if(text6.value.length>0)
@@ -73,7 +73,7 @@ window.onload = function(){
     }
     text7.onmouseout = function()
     {
-        if(/[0-9]{17}[0-9xX]/.test(text7.value))
+        if(/^[0-9]{17}[0-9xX]$/.test(text7.value))
         {
             document.getElementById("span7").innerText = "√";
         } else if(text7.value.length>0)
