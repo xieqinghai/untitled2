@@ -1,0 +1,107 @@
+/*body*/
+/*{*/
+    /*padding-left: 30px;*/
+/*}*/
+#div61
+{
+    background-color: rgba(0,0,0,0.09);
+    width: 200px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 微软雅黑;
+    font-weight: 600;
+}
+#div62
+{
+    background-color: rgba(0,0,0,0.09);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+#div62 tr
+{
+    height: 30px;
+    width: 200px;
+}
+#div62 img
+{
+
+}
+#button71
+{
+    width: 80px;
+    height: 30px;
+    background-color: #ffd050;
+}
+
+#div91,#div92
+{
+
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+}
+#div91:hover,#div92:hover
+{
+    cursor: pointer;
+}
+#div91 img,#div92 img
+{
+    width: 10px;
+    height: 10px;
+}
+#div93
+{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#div10
+{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #999999;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+#div10 table
+{
+    border: 1px solid black;
+    width: 450px;
+    height: 100px;
+}
+#div10 table tr
+{
+
+}
+#div101
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+#delete:hover
+{
+    cursor: pointer;
+}
+#no1:hover,#yes1:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

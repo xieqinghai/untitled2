@@ -53,7 +53,7 @@ window.onload = function(){
     }
     text5.onmouseout = function()
     {
-        if(/^[0-9]{11}$/.test(text5.value))
+        if(/^[8][6][0-9]{11}$/.test(text5.value))
         {
             document.getElementById("span5").innerText = "√";
         } else if(text5.value.length>0)
