@@ -1,11 +1,11 @@
 /*作业1hellow,jQuery!*/
 $(document).ready(function(){
-    $("*").css(
-        {
-            "margin":"0",
-            "padding":"0",
-        }
-    )
+    // $("*").css(
+    //     {
+    //         "margin":"0",
+    //         "padding":"0",
+    //     }
+    // )
     /*作业2实时问答特效*/
     $("#question").css("height","135px");
     $("#question span").css(
@@ -38,10 +38,10 @@ $(document).ready(function(){
     /*作业4 过滤选择器*/
     $("#div4_out").css(
         {
-            "height":"330px",
+            "height":"260px",
             "width":"250px",
             "margin-top":"20px",
-            "overflow":"scroll",
+            "overflow-y":"scroll",
             "margin-bottom":"40px",
         }
     )
@@ -215,22 +215,22 @@ $(document).ready(function(){
     )
     /*鼠标点击事件*/
     $("#div7_center table tr:eq(0) input").focus(function(){
-        $("#div7_center table tr:eq(0) input").css("border","1px solid yellow");
+        $("#div7_center table tr:eq(0) input").css("border","2px solid blue");
     })
     $("#div7_center table tr:eq(0) input").blur(function(){
-        $("#div7_center table tr:eq(0) input").css("border","1px solid black");
+        $("#div7_center table tr:eq(0) input").css("border","1px solid #999999");
     })
     $("#div7_center table tr:eq(1) input").focus(function(){
-        $("#div7_center table tr:eq(1) input").css("border","1px solid yellow");
+        $("#div7_center table tr:eq(1) input").css("border","2px solid blue");
     })
     $("#div7_center table tr:eq(1) input").blur(function(){
-        $("#div7_center table tr:eq(1) input").css("border","1px solid black");
+        $("#div7_center table tr:eq(1) input").css("border","1px solid #999999");
     })
     $("#div7_center table tr:eq(2) input").focus(function(){
-        $("#div7_center table tr:eq(2) input").css("border","1px solid yellow");
+        $("#div7_center table tr:eq(2) input").css("border","2px solid blue");
     })
     $("#div7_center table tr:eq(2) input").blur(function(){
-        $("#div7_center table tr:eq(2) input").css("border","1px solid black");
+        $("#div7_center table tr:eq(2) input").css("border","1px solid #999999");
     })
 
     /*div7_center布局*/
@@ -252,8 +252,8 @@ $(document).ready(function(){
             "border":"1px solid #999999",
         }
     )
-    $("#div7_center table tr input").mouseover(function(){
-        $("#div7_center table tr input").css("cursor","pointer");
+    $("#div7_center table tr span").mouseover(function(){
+        $("#div7_center table tr span").css("cursor","pointer");
     })
 
     /*第八题 制作团购网主导航*/
@@ -360,13 +360,23 @@ $(document).ready(function(){
     /*第10题,消失动画特效*/
     $("#div101").css("display","none");
     $("#delete").click(function(){
-        $("#div101").show("slow");
+        $("#div101").fadeIn("slow");
     })
     $("#no1").click(function(){
-        $("#div101").hide("fast");
+        $("#div101").fadeOut("fast");
     })
-
-
+    var checkbox10 = document.getElementById("checkbox10");
+    var checkbox100 = document.getElementsByName("checkbox100")
+    checkbox10.onclick = function()
+    {
+        if(checkbox10.checked)
+        {
+            checkbox100[0].checked = true;
+        } else
+        {
+            checkbox100[0].checked = false;
+        }
+    }
 
 
 

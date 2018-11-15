@@ -2,6 +2,12 @@
 /*{*/
     /*padding-left: 30px;*/
 /*}*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
 #div61
 {
     background-color: rgba(0,0,0,0.09);
@@ -34,7 +40,10 @@
     height: 30px;
     background-color: #ffd050;
 }
-
+#button71:hover
+{
+    cursor: pointer;
+}
 #div91,#div92
 {
 
@@ -57,9 +66,10 @@
 }
 #div93
 {
-    width: 500px;
+    width: 507px;
     height: 300px;
-    border: 1px solid black;
+    border: 1px solid #999999;
+    margin-left: 30px;
 }
 
 #div10
@@ -69,6 +79,7 @@
     border: 1px solid #999999;
     margin-bottom: 100px;
     margin-left: 20px;
+    margin-top: 30px;
 }
 #div10 table
 {
@@ -85,7 +96,8 @@
     width: 100px;
     height: 100px;
     border: 1px solid black;
-    margin-left: 50px;
+    margin-left: 347px;
+
 }
 #delete:hover
 {
